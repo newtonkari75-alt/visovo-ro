@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FAVICON (Foto do produto) -->
+    <link rel="icon" type="image/webp" href="images/hero.webp">
+    
     <!-- CORE SEO -->
     <title>Visovo PRO România | Restabiliți Vederea Fără Operație (2025)</title>
     <meta name="title" content="Visovo PRO România | Restabiliți Vederea Fără Operație (2025)">
@@ -20,19 +24,19 @@
     <!-- GEO & REGIONAL TARGETING -->
     <meta name="geo.region" content="RO">
     <meta name="geo.placename" content="Romania">
-    <link rel="canonical" href="https://visovo-ro.vercel.app/">
-    <link rel="alternate" hreflang="ro-RO" href="https://visovo-ro.vercel.app/">
-    <link rel="alternate" hreflang="x-default" href="https://visovo-ro.vercel.app/">
+    <link rel="canonical" href="https://ro.getvisovo.shop/">
+    <link rel="alternate" hreflang="ro-RO" href="https://ro.getvisovo.shop/">
+    <link rel="alternate" hreflang="x-default" href="https://ro.getvisovo.shop/">
 
     <!-- OPEN GRAPH (SOCIAL SEO) -->
     <meta property="og:type" content="product">
     <meta property="og:locale" content="ro_RO">
-    <meta property="og:url" content="https://visovo-ro.vercel.app/">
+    <meta property="og:url" content="https://ro.getvisovo.shop/">
     <meta property="og:title" content="Visovo PRO România | Vedere Clară Fără Operație">
     <meta property="og:description"
         content="Redobândiți-vă vederea clară fără ochelari sau operații. Protejați-vă ochii înainte să fie prea târziu! Disponibil acum în România cu plata la livrare.">
     <meta property="og:site_name" content="Visovo România">
-    <meta property="og:image" content="https://visovo-ro.vercel.app/images/hero.webp">
+    <meta property="og:image" content="https://ro.getvisovo.shop/images/hero.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
@@ -41,7 +45,7 @@
     <meta name="twitter:title" content="Visovo PRO România | Fără Operații">
     <meta name="twitter:description"
         content="Protecție eficientă împotriva deteriorării vederii. Opriți oboseala oculară astăzi.">
-    <meta name="twitter:image" content="https://visovo-ro.vercel.app/images/hero.webp">
+    <meta name="twitter:image" content="https://ro.getvisovo.shop/images/hero.webp">
 
     <!-- JSON-LD SCHEMA MARKUP -->
     <script type="application/ld+json">
@@ -49,7 +53,7 @@
         "@context": "https://schema.org/",
         "@type": "Product",
         "name": "Visovo PRO Restaurarea Vederii",
-        "image": "https://visovo-ro.vercel.app/images/hero.webp",
+        "image": "https://ro.getvisovo.shop/images/hero.webp",
         "description": "Protocol natural și supliment alimentar pentru a proteja funcția mușchilor oculari, ameliorarea oboselii și prevenirea deteriorării vederii fără intervenție chirurgicală în România.",
         "brand": { "@type": "Brand", "name": "Visovo" },
         "sku": "VISOVO-RO-2025",
@@ -61,7 +65,7 @@
             "priceValidUntil": "2026-12-31",
             "itemCondition": "https://schema.org/NewCondition",
             "availability": "https://schema.org/InStock",
-            "url": "https://visovo-ro.vercel.app/",
+            "url": "https://ro.getvisovo.shop/",
             "seller": {
                 "@type": "Organization",
                 "name": "Visovo Official RO"
@@ -104,10 +108,10 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Visovo Romania Official",
-        "url": "https://visovo-ro.vercel.app/",
+        "url": "https://ro.getvisovo.shop/",
         "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://visovo-ro.vercel.app/?s={search_term_string}",
+            "target": "https://ro.getvisovo.shop/?s={search_term_string}",
             "query-input": "required name=search_term_string"
         }
     }]
@@ -125,10 +129,10 @@
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
                         brand: {
-                            primary: '#dc2626', // Red
-                            dark: '#1e293b',    // Slate Dark
-                            light: '#eef2f6',   // Soft Blue-Grey
-                            yellow: '#facc15',  // Bright Yellow
+                            primary: '#dc2626',
+                            dark: '#1e293b',
+                            light: '#eef2f6',
+                            yellow: '#facc15',
                             text: '#111827',
                             muted: '#64748b'
                         }
@@ -139,67 +143,14 @@
     </script>
 
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .bg-overlay {
-            background-color: rgba(30, 41, 59, 0.85);
-            backdrop-filter: blur(2px);
-        }
-
-        .faq-item .faq-body {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.35s ease;
-        }
-
-        .faq-item.open .faq-body {
-            max-height: 600px;
-        }
-
-        .faq-item.open .faq-icon {
-            transform: rotate(45deg);
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.6);
-            z-index: 1000;
-            justify-content: center;
-            align-items: flex-start;
-            padding-top: 5vh;
-            backdrop-filter: blur(4px);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .modal.active {
-            display: flex;
-            opacity: 1;
-        }
-
-        .btn-cta {
-            background: #facc15;
-            color: #111827;
-            text-transform: uppercase;
-            font-weight: 800;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 8px;
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 6px -1px rgba(250, 204, 21, 0.4);
-            cursor: pointer;
-        }
-
-        .btn-cta:hover {
-            background: #eab308;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(250, 204, 21, 0.5);
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .faq-item .faq-body { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+        .faq-item.open .faq-body { max-height: 600px; }
+        .faq-item.open .faq-icon { transform: rotate(45deg); }
+        .modal { display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.6); z-index: 1000; justify-content: center; align-items: flex-start; padding-top: 5vh; backdrop-filter: blur(4px); opacity: 0; transition: opacity 0.3s ease; }
+        .modal.active { display: flex; opacity: 1; }
+        .btn-cta { background: #facc15; color: #111827; text-transform: uppercase; font-weight: 800; display: inline-flex; justify-content: center; align-items: center; border-radius: 8px; transition: all 0.2s ease; box-shadow: 0 4px 6px -1px rgba(250, 204, 21, 0.4); cursor: pointer; }
+        .btn-cta:hover { background: #eab308; transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(250, 204, 21, 0.5); }
     </style>
 </head>
 
@@ -220,16 +171,11 @@
         <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="font-black text-2xl tracking-tight text-brand-dark">VISOVO</div>
             <div class="hidden md:flex gap-6">
-                <a href="#benefits"
-                    class="text-sm font-semibold text-brand-muted hover:text-brand-primary transition">Cum
-                    funcționează</a>
-                <a href="#reviews"
-                    class="text-sm font-semibold text-brand-muted hover:text-brand-primary transition">Păreri</a>
-                <a href="#faq"
-                    class="text-sm font-semibold text-brand-muted hover:text-brand-primary transition">Întrebări</a>
+                <a href="#benefits" class="text-sm font-semibold text-brand-muted hover:text-brand-primary transition">Cum funcționează</a>
+                <a href="#reviews" class="text-sm font-semibold text-brand-muted hover:text-brand-primary transition">Păreri</a>
+                <a href="#faq" class="text-sm font-semibold text-brand-muted hover:text-brand-primary transition">Întrebări</a>
             </div>
-            <button onclick="location.reload()"
-                class="btn-cta px-4 py-2 text-xs md:text-sm">
+            <button onclick="location.reload()" class="btn-cta px-4 py-2 text-xs md:text-sm">
                 COMANDĂ ACUM <i class="fa-solid fa-arrow-right ml-2"></i>
             </button>
         </div>
@@ -237,65 +183,33 @@
 
     <!-- 1. HERO SECTION -->
     <section class="relative py-12 md:py-24 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] shadow-inner">
-        <div
-            class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiLz48L3N2Zz4=')] opacity-50">
-        </div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiLz48L3N2Zz4=')] opacity-50"></div>
         <div class="max-w-6xl mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
-
-            <!-- Left Side / Content -->
             <div class="flex-1 text-center lg:text-left max-w-2xl relative z-20 flex flex-col">
-
-                <!-- Headline block -->
                 <div class="order-1">
-                    <span
-                        class="inline-block bg-brand-primary text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-6">OPRIȚI
-                        DETERIORAREA VEDERII</span>
-                    <h1
-                        class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight uppercase mb-8 break-words">
+                    <span class="inline-block bg-brand-primary text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-6">OPRIȚI DETERIORAREA VEDERII</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight uppercase mb-8 break-words">
                         PROTEJAȚI-VĂ OCHII ÎNAINTE SĂ FIE <span class="text-brand-yellow">PREA TÂRZIU!</span>
                     </h1>
                 </div>
-
-                <!-- Product Image ONLY FOR MOBILE (Resized for Congruence) -->
+                <!-- Imagem Mobile Reduzida -->
                 <div class="order-2 lg:hidden w-full max-w-[150px] md:max-w-[200px] mx-auto mb-6">
-                    <img src="images/hero.webp" alt="Visovo"
-                        class="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
-                        onerror="this.style.display='none'">
+                    <img src="images/hero.webp" alt="Visovo Product" class="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]" onerror="this.style.display='none'">
                 </div>
-
-                <!-- Bullets & CTA -->
                 <div class="order-3">
-                    <ul
-                        class="text-gray-200 space-y-4 mb-10 text-base md:text-lg font-medium max-w-lg mx-auto lg:mx-0 text-left">
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-brand-yellow mt-1.5"></i>
-                            <span>Elimină oboseala digitală și senzația de nisip în ochi în doar <strong>câteva
-                                    zile.</strong></span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-brand-yellow mt-1.5"></i>
-                            <span>Alternativă naturală pentru a evita <strong>operațiile invazive sau miopia
-                                    severă.</strong></span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-brand-yellow mt-1.5"></i>
-                            <span>Vă ajută să nu depindeți complet de ochelarii de citit în <strong>activitățile
-                                    zilnice.</strong></span>
-                        </li>
+                    <ul class="text-gray-200 space-y-4 mb-10 text-base md:text-lg font-medium max-w-lg mx-auto lg:mx-0 text-left">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-yellow mt-1.5"></i> <span>Elimină oboseala digitală și senzația de nisip în ochi în doar <strong>câteva zile.</strong></span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-yellow mt-1.5"></i> <span>Alternativă naturală pentru a evita <strong>operațiile invazive sau miopia severă.</strong></span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-yellow mt-1.5"></i> <span>Vă ajută să nu depindeți complet de ochelarii de citit în <strong>activitățile zilnice.</strong></span></li>
                     </ul>
-
-                    <button onclick="location.reload()"
-                        class="btn-cta px-10 py-5 text-base md:text-xl w-full md:w-auto shadow-2xl inline-flex justify-center items-center">
+                    <button onclick="location.reload()" class="btn-cta px-10 py-5 text-base md:text-xl w-full md:w-auto shadow-2xl inline-flex justify-center items-center">
                         OBȚINEȚI REDUCEREA ȘI PLĂTIȚI LA LIVRARE <i class="fa-solid fa-shield-cat ml-2 mt-1"></i>
                     </button>
                 </div>
             </div>
-
-            <!-- Product Image ONLY FOR DESKTOP -->
-            <div
-                class="hidden lg:block order-last flex-shrink-0 w-full max-w-[280px] xl:max-w-[320px] relative z-10 mx-auto lg:mx-0">
-                <img src="images/hero.webp" alt="Visovo" class="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
-                    onerror="this.style.display='none'">
+            <!-- Imagem Desktop -->
+            <div class="hidden lg:block order-last flex-shrink-0 w-full max-w-[280px] xl:max-w-[320px] relative z-10 mx-auto lg:mx-0">
+                <img src="images/hero.webp" alt="Visovo Product" class="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]" onerror="this.style.display='none'">
             </div>
         </div>
     </section>
@@ -303,116 +217,49 @@
     <!-- 2. TRUST STRIP -->
     <div class="bg-white border-b border-gray-200">
         <div class="max-w-6xl mx-auto px-4 py-5 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <div>
-                <i class="fa-solid fa-user-doctor text-2xl text-brand-primary mb-2"></i>
-                <h4 class="font-bold text-sm text-brand-dark">Recomandat de Specialiști</h4>
-                <p class="text-xs text-brand-muted">Siguranță garantată</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-ban text-2xl text-brand-primary mb-2"></i>
-                <h4 class="font-bold text-sm text-brand-dark">Fără Operații</h4>
-                <p class="text-xs text-brand-muted">Metodă 100% naturală</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-truck text-2xl text-brand-primary mb-2"></i>
-                <h4 class="font-bold text-sm text-brand-dark">ZERO Risc</h4>
-                <p class="text-xs text-brand-muted">Plată strict la livrare</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-eye-low-vision text-2xl text-brand-primary mb-2"></i>
-                <h4 class="font-bold text-sm text-brand-dark">Previne Bolile</h4>
-                <p class="text-xs text-brand-muted">Stopează deteriorarea</p>
-            </div>
+            <div><i class="fa-solid fa-user-doctor text-2xl text-brand-primary mb-2"></i><h4 class="font-bold text-sm text-brand-dark">Recomandat de Specialiști</h4><p class="text-xs text-brand-muted">Siguranță garantată</p></div>
+            <div><i class="fa-solid fa-ban text-2xl text-brand-primary mb-2"></i><h4 class="font-bold text-sm text-brand-dark">Fără Operații</h4><p class="text-xs text-brand-muted">Metodă 100% naturală</p></div>
+            <div><i class="fa-solid fa-truck text-2xl text-brand-primary mb-2"></i><h4 class="font-bold text-sm text-brand-dark">ZERO Risc</h4><p class="text-xs text-brand-muted">Plată strict la livrare</p></div>
+            <div><i class="fa-solid fa-eye-low-vision text-2xl text-brand-primary mb-2"></i><h4 class="font-bold text-sm text-brand-dark">Previne Bolile</h4><p class="text-xs text-brand-muted">Stopează deteriorarea</p></div>
         </div>
     </div>
 
-    <!-- 3. SOCIAL PROOF STRIP -->
+    <!-- 3. SOCIAL PROOF -->
     <section class="bg-brand-light py-10 border-b border-gray-200">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-                <p class="text-4xl font-black text-brand-primary">40 Mil.</p>
-                <p class="text-sm font-semibold text-brand-muted mt-1 uppercase">Oameni suferă de pierderea vederii
-                    necontrolată</p>
-            </div>
-            <div>
-                <p class="text-4xl font-black text-brand-primary">35,000+</p>
-                <p class="text-sm font-semibold text-brand-muted mt-1 uppercase">Clienți ne-au ales pentru a preveni
-                    asta</p>
-            </div>
-            <div>
-                <p class="text-4xl font-black text-brand-primary">100%</p>
-                <p class="text-sm font-semibold text-brand-muted mt-1 uppercase">Ingrediente sigure recunoscute de
-                    medicină</p>
-            </div>
-            <div>
-                <p class="text-4xl font-black text-brand-primary">No. 1</p>
-                <p class="text-sm font-semibold text-brand-muted mt-1 uppercase">Soluție preventivă în Europa de Est</p>
-            </div>
+            <div><p class="text-4xl font-black text-brand-primary">40 Mil.</p><p class="text-sm font-semibold text-brand-muted mt-1 uppercase">Oameni suferă de pierderea vederii</p></div>
+            <div><p class="text-4xl font-black text-brand-primary">35,000+</p><p class="text-sm font-semibold text-brand-muted mt-1 uppercase">Clienți ne-au ales</p></div>
+            <div><p class="text-4xl font-black text-brand-primary">100%</p><p class="text-sm font-semibold text-brand-muted mt-1 uppercase">Ingrediente sigure</p></div>
+            <div><p class="text-4xl font-black text-brand-primary">No. 1</p><p class="text-sm font-semibold text-brand-muted mt-1 uppercase">Soluție preventivă</p></div>
         </div>
     </section>
 
-    <!-- 4. BENEFITS & HOW IT WORKS -->
+    <!-- 4. BENEFITS -->
     <section class="py-20 bg-white" id="benefits">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-5xl font-black text-brand-dark mb-6 uppercase tracking-tight">Sunteți gata să
-                pierdeți propria <span class="text-brand-primary border-b-4 border-brand-primary">independență
-                    fizică?</span>
-            </h2>
-
-            <p class="text-lg text-gray-700 leading-relaxed mb-8 font-medium">
-                Peste o anumită vârstă sau din cauza orelor petrecute în fața ecranelor, mușchii oculari încep să
-                slăbească fatal. Ochelarii nu tratează cauza – ei doar vă fac mușchii și mai leneși. Riscul real nu este
-                doar să purtați ochelari, ci apariția presiunii interioare care favorizează glaucomul și orbirea
-                prematură. Învățați să preveniți antes de a fi prea târziu.
-            </p>
-
-            <div class="bg-red-50 border-l-4 border-brand-primary p-6 rounded-r-xl mb-12 text-left shadow-sm">
-                <h3 class="text-xl md:text-2xl font-black text-brand-primary uppercase mb-3">SĂNĂTATEA OCHILOR ESTE
-                    DESPRE CIRCULAȚIE ȘI MUȘCHI, NU DOAR DESPRE LENTILE.</h3>
-                <p class="text-sm text-gray-800 font-semibold">Tensionarea ochilor voștri trebuie combătută din
-                    interior. Visovo întărește microcirculația exact acolo unde ochii au nevoie și vă readuce confortul
-                    clarității.</p>
-            </div>
+            <h2 class="text-3xl md:text-5xl font-black text-brand-dark mb-6 uppercase tracking-tight">Sunteți gata să pierdeți propria <span class="text-brand-primary border-b-4 border-brand-primary">independență fizică?</span></h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8 font-medium">Peste o anumită vârstă, mușchii oculari încep să slăbească fatal. Ochelarii nu tratează cauza. Visovo întărește microcirculația exact acolo unde ochii au nevoie.</p>
         </div>
-
         <div class="max-w-6xl mx-auto px-4 mt-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="bg-brand-light p-8 rounded-2xl relative transition hover:-translate-y-2 hover:shadow-lg">
-                    <div
-                        class="w-14 h-14 bg-brand-primary text-white rounded-full flex items-center justify-center text-2xl mb-6 shadow-md">
-                        <i class="fa-solid fa-arrows-to-eye"></i>
-                    </div>
+                <div class="bg-brand-light p-8 rounded-2xl transition hover:-translate-y-2 hover:shadow-lg">
+                    <div class="w-14 h-14 bg-brand-primary text-white rounded-full flex items-center justify-center text-2xl mb-6 shadow-md"><i class="fa-solid fa-arrows-to-eye"></i></div>
                     <h4 class="font-bold text-lg mb-3 uppercase text-brand-dark">Reface Funcția Musculară</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">Mușchii oculari focalizează vederea ascuțită. Când
-                        aceștia funcționează normal, nu vă mai e greu să citiți etichete mici sau mesaje.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Mușchii oculari focalizează vederea ascuțită natural.</p>
                 </div>
-                <!-- Feature 2 -->
-                <div class="bg-brand-light p-8 rounded-2xl relative transition hover:-translate-y-2 hover:shadow-lg">
-                    <div
-                        class="w-14 h-14 bg-brand-primary text-white rounded-full flex items-center justify-center text-2xl mb-6 shadow-md">
-                        <i class="fa-solid fa-eye-dropper"></i>
-                    </div>
+                <div class="bg-brand-light p-8 rounded-2xl transition hover:-translate-y-2 hover:shadow-lg">
+                    <div class="w-14 h-14 bg-brand-primary text-white rounded-full flex items-center justify-center text-2xl mb-6 shadow-md"><i class="fa-solid fa-eye-dropper"></i></div>
                     <h4 class="font-bold text-lg mb-3 uppercase text-brand-dark">Oprește Uscăciunea</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">Senzația de "nisip în ochi" sau arsurile dispar,
-                        formula menținând lăcrimarea naturală excelentă indiferent de efort.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Senzația de "nisip în ochi" sau arsurile dispar rapid.</p>
                 </div>
-                <!-- Feature 3 -->
-                <div class="bg-brand-light p-8 rounded-2xl relative transition hover:-translate-y-2 hover:shadow-lg">
-                    <div
-                        class="w-14 h-14 bg-brand-primary text-white rounded-full flex items-center justify-center text-2xl mb-6 shadow-md">
-                        <i class="fa-solid fa-shield-virus"></i>
-                    </div>
+                <div class="bg-brand-light p-8 rounded-2xl transition hover:-translate-y-2 hover:shadow-lg">
+                    <div class="w-14 h-14 bg-brand-primary text-white rounded-full flex items-center justify-center text-2xl mb-6 shadow-md"><i class="fa-solid fa-shield-virus"></i></div>
                     <h4 class="font-bold text-lg mb-3 uppercase text-brand-dark">Protecție Anti-Boli</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">O circulație sangvină optimă echilibrează presiunea
-                        intraoculară, scăzând puternic riscul degenerării maculare cu vârsta.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Scade puternic riscul degenerării maculare cu vârsta.</p>
                 </div>
             </div>
             <div class="text-center mt-12">
-                <button onclick="location.reload()"
-                    class="btn-cta px-10 py-4 text-base shadow-xl">
-                    OPRIȚI SLĂBIREA VEDERII ACUM <i class="fa-solid fa-arrow-right ml-2"></i>
-                </button>
+                <button onclick="location.reload()" class="btn-cta px-10 py-4 text-base shadow-xl">OPRIȚI SLĂBIREA VEDERII ACUM <i class="fa-solid fa-arrow-right ml-2"></i></button>
             </div>
         </div>
     </section>
@@ -420,212 +267,40 @@
     <!-- 5. REVIEWS -->
     <section class="py-20 bg-brand-dark relative" id="reviews">
         <div class="max-w-6xl mx-auto px-4 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight mb-4">Povești De Succes
-                    Din România</h2>
-                <p class="text-gray-400 text-lg">Peste 35.000 de români și-au luat în propriile mâini viata vizuală și
-                    independența fizică.</p>
-            </div>
-
+            <div class="text-center mb-16"><h2 class="text-3xl md:text-5xl font-black text-white uppercase mb-4">Povești De Succes</h2></div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 <div class="bg-gray-800 border border-gray-700 p-8 rounded-2xl">
                     <div class="flex text-brand-yellow text-lg mb-4">★★★★★</div>
-                    <p class="text-gray-300 text-sm italic mb-6">"Vederea mea nu era așa înainte... Ca analist, oboseam
-                        repede lucrând la birou, ochii îmi ardeau și lăcrimau în fiecare seară. Îmi era frică că voi
-                        pierde capacitatea de muncă. Nu voiam ochelari groși. O cură de Visovo a schimbat totul. Nu mă
-                        mai tem că vederea mi se va înrăutăți brusc, senzația de oboseală a dispărut."</p>
-                    <div class="flex items-center gap-4">
-                        <div
-                            class="w-12 h-12 rounded-full bg-brand-primary flex items-center justify-center text-white font-bold text-lg">
-                            A</div>
-                        <div>
-                            <p class="font-bold text-white text-sm">Andrei Popescu</p>
-                            <p class="text-xs text-gray-400">38 ani · București</p>
-                        </div>
-                    </div>
+                    <p class="text-gray-300 text-sm italic mb-6">"O cură de Visovo a schimbat totul. Nu mă mai tem că vederea mi se va înrăutăți brusc."</p>
+                    <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full bg-brand-primary flex items-center justify-center text-white font-bold">A</div><p class="font-bold text-white text-sm">Andrei Popescu</p></div>
                 </div>
-
                 <div class="bg-gray-800 border border-gray-700 p-8 rounded-2xl">
                     <div class="flex text-brand-yellow text-lg mb-4">★★★★★</div>
-                    <p class="text-gray-300 text-sm italic mb-6">"După 40 de ani, cititul devenise un chin absolut.
-                        Începusem să țin cărțile sau telefonul tot mai departe de mine. Mă simțeam îmbătrânită cu acei
-                        ochelari imenși. Prietena mea mi-a recomandat această soluție și am rămas uimită: acum citesc
-                        mesaje, etichete pe medicamente și reviste fără să îmi stric ochii. Mă simt iar tânără!"</p>
-                    <div class="flex items-center gap-4">
-                        <div
-                            class="w-12 h-12 rounded-full bg-brand-primary flex items-center justify-center text-white font-bold text-lg">
-                            E</div>
-                        <div>
-                            <p class="font-bold text-white text-sm">Elena Ionescu</p>
-                            <p class="text-xs text-gray-400">46 ani · Cluj-Napoca</p>
-                        </div>
-                    </div>
+                    <p class="text-gray-300 text-sm italic mb-6">"Acum citesc mesaje și etichete fără să îmi stric ochii. Mă simt iar tânără!"</p>
+                    <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full bg-brand-primary flex items-center justify-center text-white font-bold">E</div><p class="font-bold text-white text-sm">Elena Ionescu</p></div>
                 </div>
-
                 <div class="bg-gray-800 border border-gray-700 p-8 rounded-2xl">
                     <div class="flex text-brand-yellow text-lg mb-4">★★★★★</div>
-                    <p class="text-gray-300 text-sm italic mb-6">"Vederea mea pica de la lună la lună din cauza vârstei.
-                        Eram dependent de copiii mei ca să rezolv documente sau să citesc contracte. Mă speria teribil
-                        gândul la glaucom sau orbire, la operații cu bisturiul invaziv. Băiatul meu mi-a comandat
-                        Visovo. De atunci, tensiunea oculară mea a scăzut, vad clar farurile la distanță ploi și conduc
-                        de plăcere!"</p>
-                    <div class="flex items-center gap-4">
-                        <div
-                            class="w-12 h-12 rounded-full bg-brand-primary flex items-center justify-center text-white font-bold text-lg">
-                            M</div>
-                        <div>
-                            <p class="font-bold text-white text-sm">Mihai Stan</p>
-                            <p class="text-xs text-gray-400">52 ani · Iași</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="bg-gray-900 rounded-2xl p-8 border border-gray-800 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                <div>
-                    <h5 class="text-3xl font-black text-white mb-2">96%</h5>
-                    <p class="text-xs text-gray-400 uppercase font-semibold">Stopează degradarea în prima lună</p>
-                </div>
-                <div>
-                    <h5 class="text-3xl font-black text-white mb-2">94%</h5>
-                    <p class="text-xs text-gray-400 uppercase font-semibold">Îmbunătățesc vizibil claritatea</p>
-                </div>
-                <div>
-                    <h5 class="text-3xl font-black text-white mb-2">98%</h5>
-                    <p class="text-xs text-gray-400 uppercase font-semibold">Apreciază faptul că nu plătesc nimic în
-                        avans</p>
+                    <p class="text-gray-300 text-sm italic mb-6">"Tensiunea oculară a scăzut, vad clar farurile la distanță și conduc de plăcere!"</p>
+                    <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full bg-brand-primary flex items-center justify-center text-white font-bold">M</div><p class="font-bold text-white text-sm">Mihai Stan</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6. FAQ & SEO & FOOTER -->
+    <!-- 6. FAQ -->
     <section class="py-20 bg-brand-light" id="faq">
         <div class="max-w-3xl mx-auto px-4">
             <h2 class="text-3xl font-black text-brand-dark text-center mb-10 uppercase">Întrebări Frecvente</h2>
-
             <div class="border border-gray-200 rounded-2xl bg-white overflow-hidden shadow-sm divide-y divide-gray-100">
                 <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition">
-                        <h4 class="font-bold text-brand-dark">Cum funcționează Visovo? Diferă cu ceva de ochelari?</h4>
-                        <span class="faq-icon text-2xl font-light ml-4">+</span>
-                    </div>
-                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed">
-                        <div class="py-4">Ochelarii doar corectează lentila în exterior, forțând mușchii ochilor să se
-                            atrofieze. Visovo atacă exact sursa: restabilește circulația, întărește mușchiul și
-                            protejează natural structurile interne ale ochiului de oboseală cronică.</div>
-                    </div>
+                    <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition"><h4 class="font-bold text-brand-dark">Cum funcționează Visovo?</h4><span class="faq-icon text-2xl">+</span></div>
+                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600"><div class="py-4">Visovo atacă exact sursa: restabilește circulația și întărește mușchiul ocular natural.</div></div>
                 </div>
                 <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition">
-                        <h4 class="font-bold text-brand-dark">Sper să evit operația. Mă poate ajuta produsul?</h4>
-                        <span class="faq-icon text-2xl font-light ml-4">+</span>
-                    </div>
-                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed">
-                        <div class="py-4">Da! Foarte mulți clienți români au raportat reușita evitării sau prelungirii
-                            încheierii unui tratament invaziv prin stabilizarea ne-deteriorării vederii provocate cu
-                            Visovo. Tensiunea oculară se reduce și mediul vizual rămâne limpede natural.</div>
-                    </div>
+                    <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition"><h4 class="font-bold text-brand-dark">Sper să evit operația?</h4><span class="faq-icon text-2xl">+</span></div>
+                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600"><div class="py-4">Da! Mulți clienți au raportat stabilizarea vederii și evitarea intervențiilor prin folosirea curei complete.</div></div>
                 </div>
-                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition">
-                        <h4 class="font-bold text-brand-dark">Lucrez 8 ore pe zi la calculator. E potrivit pentru mine?
-                        </h4>
-                        <span class="faq-icon text-2xl font-light ml-4">+</span>
-                    </div>
-                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed">
-                        <div class="py-4">Absolut! Elimină durerile de cap provocate de efortul vizual, roșeața gravă și
-                            sentimentul teribil de prurit sau „nisip în ochi” pe care tehnologia îl impune retinei
-                            umane.</div>
-                    </div>
-                </div>
-                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition">
-                        <h4 class="font-bold text-brand-dark">Cât costă produsul și cum îl plătesc?</h4>
-                        <span class="faq-icon text-2xl font-light ml-4">+</span>
-                    </div>
-                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed">
-                        <div class="py-4">Este deosebit de extrem de accesibil – mult mai ieftin decât lentilele
-                            bi-focale sau abonamentele medicale grele. Pentru siguranța dumneavoastră alegeți „PLATA LA
-                            LIVRARE (Ramburs)” direct curierului, zero risc în avans!</div>
-                    </div>
-                </div>
-                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition">
-                        <h4 class="font-bold text-brand-dark">Cum obțin produsul original în România autentic?</h4>
-                        <span class="faq-icon text-2xl font-light ml-4">+</span>
-                    </div>
-                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed">
-                        <div class="py-4">Doar prin portalul web oficial acreditat (acest site). Feriți-vă de copii
-                            chimice în farmacii terțe. Completează formatul sau dă click pe comandă, noi vă avizăm
-                            detaliile poștale și primiți factura curier la îndemână cu prețul mic.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEO TEXT BLOCK -->
-    <section class="py-16 bg-white border-t border-gray-100 text-sm text-gray-700 leading-relaxed">
-        <div class="max-w-5xl mx-auto px-4 space-y-10">
-            <div>
-                <h3 class="text-xl font-bold text-brand-dark mb-3">Visovo în România: Tratament Natural Pentru Vedere
-                    Încețoșată și Oboseală Oculară</h3>
-                <p>Odată cu înaintarea în vârstă și expunerea zilnică la ecrane digitale (telefoane, calculatoare,
-                    televizoare), milioane de români se confruntă cu deteriorarea vederii. Simptome precum
-                    <strong>vederea încețoșată</strong>, dificultatea de a citi de aproape, durerile de cap frecvente și
-                    senzația de "nisip în ochi" sau ochi uscat au devenit probleme cotidiene. <strong>Visovo</strong> a
-                    fost dezvoltat special pentru a oferi o <strong>soluție naturală</strong> și o alternativă la
-                    ochelarii de vedere, atacând nu doar simptomele, ci și cauza principală: funcția slăbită a mușchilor
-                    oculari și irigarea sanguină deficitară a retinei.
-                </p>
-            </div>
-
-            <div>
-                <h3 class="text-xl font-bold text-brand-dark mb-3">De Ce Prețul Ochelarilor Nu Salvează Sănătatea
-                    Ochilor?</h3>
-                <p>Majoritatea persoanelor apelează la ochelari sau lentile de contact la primele semne de
-                    <strong>slăbire a vederii (miopie, hipermetropie, prezbiopie)</strong>. Din păcate, lentilele
-                    artificiale nu "vindecă" problema. Ele acționează ca o „cârjă”, forțând mușchiul ocular să devină și
-                    mai leneș, ceea ce duce inevitabil la creșterea dioptriilor în fiecare an. Spre deosebire de
-                    soluțiile temporare, <strong>Visovo funcționează prin tonifierea mușchilor oculari</strong> interni
-                    (cum este mușchiul ciliar), redând elasticitatea cristalinului. Această acțiune de restaurare
-                    previne degradarea continuă și vă ajută să vă recăpătați claritatea naturală a focusului vizual pe
-                    distanțe lungi și scurte.
-                </p>
-            </div>
-
-            <div>
-                <h3 class="text-xl font-bold text-brand-dark mb-3">Adevărata Noutate în Medicina Preventivă: Evitați
-                    Operația cu Laser a Ochilor</h3>
-                <p>Cea mai mare teamă a adulților din ziua de azi este pierderea autonomiei și necesitatea unei
-                    <strong>intervenții chirurgicale cu laser la ochi</strong>, proceduri care sunt adesea extrem de
-                    costisitoare, de speriat și având riscuri permanente. Ignorarea zecilor de ani de tensiune oculară
-                    și a uscăciunii cronice poate crește exponențial riscul apariției unor boli oftalmologice grave,
-                    ireversibile, cum ar fi glaucomul (cauzat de presiunea intraoculară crescută) sau cataracta
-                    timpurie. Formula fitochimică excepțională din <strong>Visovo protejează retina de stresul
-                        oxidativ</strong>, normalizează tensiunea din interiorul globului ocular și îmbunătățește
-                    acuitatea vizuală. Acționează literalmente ca un scut defensiv esențial împotriva îmbătrânirii
-                    ochiului pentru a stopa frica de orbire și dependența de alții.
-                </p>
-            </div>
-
-            <div>
-                <h3 class="text-xl font-bold text-brand-dark mb-3">Visovo Păreri, Preț și De Ce Nu Se Găsește În
-                    Farmaciile Din România (Tei, Catena)</h3>
-                <p>Căutați des <strong>Visovo preț farmacie</strong>, "unde să găsesc Visovo în Farmacia Tei sau
-                    Catena", sau vă întrebați unde puteți plasa o comandă sigură online? Pentru a proteja clienții din
-                    România de produse contrafăcute pe diferite site-uri obscure și pentru a menține un <strong>preț
-                        foarte accesibil, fără adaosuri comerciale uriașe</strong> impuse de lanțurile farmaceutice
-                    clasice, producătorul a decis ferm ca distribuția oficială să se facă exclusiv online. Numeroasele
-                    <strong>Visovo păreri și recenzii pozitive</strong> confirmate pe forumuri medicale evidențiază
-                    beneficiile majore ale unei cure complete: reducerea dureroasă a inflamației, recăpătarea abilității
-                    de a citi cuvinte mici și stoparea absolută a senzației de arsură după orele de lucru intens. Pe
-                    platforma noastră oficială vă oferim cel mai bun preț dedicat direct pieței românești, <strong>cu
-                        siguranța deplină a plății la livrare (ramburs)</strong>. Nu riscați nimic pe internet.
-                    Investiți azi într-o prevenție clară pentru independența voastră vizuală.
-                </p>
             </div>
         </div>
     </section>
@@ -634,121 +309,35 @@
     <footer class="bg-brand-dark text-gray-400 py-12">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex flex-wrap justify-center gap-6 mb-8 text-sm font-medium">
-                <button onclick="openModal('contactModal')" class="hover:text-white transition">Contact</button>
-                <button onclick="openModal('termsModal')" class="hover:text-white transition">Termeni și
-                    Condiții</button>
-                <button onclick="openModal('privacyModal')" class="hover:text-white transition">Politica de
-                    Confidențialitate</button>
-                <button onclick="openModal('returnsModal')" class="hover:text-white transition">Returnări și
-                    Garanții</button>
+                <button onclick="openModal('contactModal')" class="hover:text-white">Contact</button>
+                <button onclick="openModal('termsModal')" class="hover:text-white">Termeni</button>
+                <button onclick="openModal('privacyModal')" class="hover:text-white">Confidențialitate</button>
+                <button onclick="openModal('returnsModal')" class="hover:text-white">Returnări</button>
             </div>
-
             <div class="text-[10px] text-gray-500 text-center max-w-4xl mx-auto leading-relaxed space-y-3">
-                <p class="font-semibold text-gray-400">DISCLAIMER: Rezultatele individuale pot varia. Acest produs este un supliment alimentar și nu înlocuiește o dietă variată și echilibrată.</p>
-                <p>Declarațiile de pe acest site nu au scopul de a înlocui consilierea medicală profesională și
-                    diagnostică. Rezultatele sunt individualizate.</p>
-                <p>Advertising Disclosure: Acest web space servește ca spațiu informativ publicitar pentru o rețea
-                    afiliată oficială independentă de fabricant. Fabricantul original procesează preluarea de date
-                    logistice de comerț electronic, facturi, expedierile. Acesta este un advertorial. Noi obținem o mică
-                    parte din vânzări datorită referinței. Protejăm complet confidențialitatea utilizatorului global.
-                </p>
+                <p class="font-semibold text-gray-400">DISCLAIMER: Rezultatele individuale pot varia. Acest produs este un supliment alimentar.</p>
+                <p>Advertising Disclosure: Acest web space servește ca spațiu informativ publicitar pentru o rețea de distribuție autorizată și independentă de fabricant. Producătorul procesează preluarea de date logistice, facturarea și expedierea. Noi suntem un partener de informare oficial.</p>
             </div>
-
-            <div class="text-center text-xs border-t border-gray-800 mt-8 pt-6">
-                &copy; 2025 Visovo Independent Marketing Network. Toate drepturile rezervate.
-            </div>
+            <div class="text-center text-xs border-t border-gray-800 mt-8 pt-6">&copy; 2025 Visovo Independent Marketing Network.</div>
         </div>
     </footer>
 
     <!-- MOBILE STICKY CTA -->
-    <div
-        class="fixed bottom-0 left-0 w-full bg-white p-3 border-t border-gray-200 shadow-[0_-4px_10px_rgba(0,0,0,0.05)] z-50 flex md:hidden justify-center">
-        <button onclick="location.reload()"
-            class="btn-cta w-full py-3 text-sm">REDUCERE &amp; PLATĂ LA LIVRARE</button>
+    <div class="fixed bottom-0 left-0 w-full bg-white p-3 border-t border-gray-200 shadow-lg z-50 flex md:hidden">
+        <button onclick="location.reload()" class="btn-cta w-full py-3 text-sm">REDUCERE &amp; PLATĂ LA LIVRARE</button>
     </div>
 
-    <!-- MODALS (LEGAL) -->
-    <div id="contactModal" class="modal">
-        <div class="bg-white rounded-xl w-full max-w-lg shadow-2xl overflow-hidden m-4">
-            <div class="p-5 border-b border-gray-100 flex justify-between items-center">
-                <h3 class="font-bold text-xl text-brand-dark">Contact</h3>
-                <button onclick="closeModals()" class="text-gray-400 hover:text-black text-xl"><i
-                        class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="p-6 text-sm text-gray-600 leading-relaxed">
-                <p>Pentru orice întrebare de facturare/expediere fizică din România pe plase, vă rugăm adresați-vă
-                    apelurilor contact post-livrare regăsite alături de flacon prin curierul aprobat de brand.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="termsModal" class="modal">
-        <div class="bg-white rounded-xl w-full max-w-lg shadow-2xl overflow-hidden m-4">
-            <div class="p-5 border-b border-gray-100 flex justify-between items-center">
-                <h3 class="font-bold text-xl text-brand-dark">Termeni</h3>
-                <button onclick="closeModals()" class="text-gray-400 hover:text-black text-xl"><i
-                        class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="p-6 text-sm text-gray-600 leading-relaxed max-h-[60vh] overflow-y-auto">
-                <p>Navigând pe aici, recunoașteți că platforma este un vector comercial afiliat și plasați acordurile
-                    finale către magazinul de tip merchant final ce execută transferul logistic în mod absolut
-                    independent.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="privacyModal" class="modal">
-        <div class="bg-white rounded-xl w-full max-w-lg shadow-2xl overflow-hidden m-4">
-            <div class="p-5 border-b border-gray-100 flex justify-between items-center">
-                <h3 class="font-bold text-xl text-brand-dark">Confidențialitate (GDPR)</h3>
-                <button onclick="closeModals()" class="text-gray-400 hover:text-black text-xl"><i
-                        class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="p-6 text-sm text-gray-600 leading-relaxed max-h-[60vh] overflow-y-auto">
-                <p>Ne pare bine să vă protejăm. Colectăm doar cookies analitice esențiale performantei pe site (Google
-                    Analytics). Niciodată carduri, deoarece achitați complet DOAR LA LIVRARE.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="returnsModal" class="modal">
-        <div class="bg-white rounded-xl w-full max-w-lg shadow-2xl overflow-hidden m-4">
-            <div class="p-5 border-b border-gray-100 flex justify-between items-center">
-                <h3 class="font-bold text-xl text-brand-dark">Returnări</h3>
-                <button onclick="closeModals()" class="text-gray-400 hover:text-black text-xl"><i
-                        class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="p-6 text-sm text-gray-600 leading-relaxed max-h-[60vh] overflow-y-auto">
-                <p>Dacă experiența nu-i utilă conform standardului legal, solicitați returul prin adresa primită pe
-                    ambalaj de la depozitul din România care va realiza inspecția conform codurilor valabile ale
-                    consumatorului.</p>
-            </div>
-        </div>
-    </div>
+    <!-- MODALS -->
+    <div id="contactModal" class="modal"><div class="bg-white rounded-xl w-full max-w-lg p-6 m-4 relative"><button onclick="closeModals()" class="absolute top-4 right-4 text-xl">×</button><h3 class="font-bold text-xl mb-4">Contact</h3><p class="text-sm text-gray-600">Contactați-ne prin detaliile primite la livrare.</p></div></div>
+    <div id="termsModal" class="modal"><div class="bg-white rounded-xl w-full max-w-lg p-6 m-4 relative"><button onclick="closeModals()" class="absolute top-4 right-4 text-xl">×</button><h3 class="font-bold text-xl mb-4">Termeni și Condiții</h3><p class="text-sm text-gray-600">Această platformă este un partener de promovare autorizat care direcționează comenzile către depozitul logistic oficial.</p></div></div>
+    <div id="privacyModal" class="modal"><div class="bg-white rounded-xl w-full max-w-lg p-6 m-4 relative"><button onclick="closeModals()" class="absolute top-4 right-4 text-xl">×</button><h3 class="font-bold text-xl mb-4">Confidențialitate</h3><p class="text-sm text-gray-600">Protejăm datele conform GDPR.</p></div></div>
+    <div id="returnsModal" class="modal"><div class="bg-white rounded-xl w-full max-w-lg p-6 m-4 relative"><button onclick="closeModals()" class="absolute top-4 right-4 text-xl">×</button><h3 class="font-bold text-xl mb-4">Returnări</h3><p class="text-sm text-gray-600">Politica de retur conform legislației.</p></div></div>
 
     <script>
-        function toggleFaq(element) {
-            const allItems = document.querySelectorAll('.faq-item');
-            if (element.classList.contains('open')) {
-                element.classList.remove('open');
-            } else {
-                allItems.forEach(item => item.classList.remove('open'));
-                element.classList.add('open');
-            }
-        }
-        function openModal(id) {
-            document.getElementById(id).classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-        function closeModals() {
-            document.querySelectorAll('.modal').forEach(modal => modal.classList.remove('active'));
-            document.body.style.overflow = '';
-        }
-        document.querySelectorAll('.modal').forEach(modal => {
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) closeModals();
-            });
-        });
+        function toggleFaq(el) { el.classList.toggle('open'); }
+        function openModal(id) { document.getElementById(id).classList.add('active'); document.body.style.overflow = 'hidden'; }
+        function closeModals() { document.querySelectorAll('.modal').forEach(m => m.classList.remove('active')); document.body.style.overflow = ''; }
+        document.querySelectorAll('.modal').forEach(m => m.addEventListener('click', (e) => { if (e.target === m) closeModals(); }));
     </script>
 </body>
 
