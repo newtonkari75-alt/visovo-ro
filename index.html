@@ -5,38 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- FAVICON -->
-    <link rel="icon" type="image/webp" href="images/hero.webp">
-    
     <!-- CORE SEO -->
-    <title>Visovo PRO România | Suport Natural pentru Sănătatea Ochilor</title>
-    <meta name="title" content="Visovo PRO România | Suport Natural pentru Sănătatea Ochilor">
-    <meta name="description"
-        content="Susțineți confortul vizual cu Visovo PRO. Formulă naturală pentru reducerea oboselii oculare și protecția împotriva stresului digital. Comandă cu plată la livrare.">
-    <meta name="keywords"
-        content="Visovo România, preț Visovo, îngrijirea ochilor, oboseală oculară, supliment vedere, nutrienți ochi, vedere clară, vitamine ochi">
-
-    <!-- ADVANCED CRAWLER DIRECTIVES -->
+    <title>Visovo PRO România | Suport Nutrițional pentru Confort Ocular</title>
+    <meta name="description" content="Descoperiți Visovo PRO, suplimentul alimentar conceput pentru a susține sănătatea ochilor și a reduce oboseala oculară cauzată de ecrane. Formulat cu ingrediente naturale.">
+    
+    <!-- GOOGLE ADS COMPLIANCE: No misleading titles -->
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Visovo Authorized Distribution RO">
-
-    <!-- GEO & REGIONAL TARGETING -->
-    <meta name="geo.region" content="RO">
-    <meta name="geo.placename" content="Romania">
-    <link rel="canonical" href="https://ro.getvisovo.shop/">
-
-    <!-- OPEN GRAPH -->
-    <meta property="og:type" content="product">
-    <meta property="og:locale" content="ro_RO">
-    <meta property="og:url" content="https://ro.getvisovo.shop/">
-    <meta property="og:title" content="Visovo PRO România | Suport pentru Vedere Clară">
-    <meta property="og:description"
-        content="Redobândiți confortul vizual și protejați-vă ochii împotriva oboselii. Disponibil acum în România cu plata la livrare.">
-    <meta property="og:image" content="https://ro.getvisovo.shop/images/hero.webp">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script>
@@ -47,10 +24,10 @@
                     colors: {
                         brand: {
                             primary: '#dc2626',
-                            dark: '#1e293b',
-                            light: '#eef2f6',
-                            yellow: '#facc15',
-                            text: '#111827',
+                            dark: '#0f172a',
+                            light: '#f8fafc',
+                            yellow: '#fbbf24',
+                            text: '#1e293b',
                             muted: '#64748b'
                         }
                     }
@@ -60,225 +37,378 @@
     </script>
 
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .faq-item .faq-body { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
-        .faq-item.open .faq-body { max-height: 600px; }
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        .faq-item .faq-body { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .faq-item.open .faq-body { max-height: 500px; }
         .faq-item.open .faq-icon { transform: rotate(45deg); }
-        .modal { display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.6); z-index: 1000; justify-content: center; align-items: flex-start; padding-top: 5vh; backdrop-filter: blur(4px); opacity: 0; transition: opacity 0.3s ease; }
-        .modal.active { display: flex; opacity: 1; }
-        .btn-cta { background: #facc15; color: #111827; text-transform: uppercase; font-weight: 800; display: inline-flex; justify-content: center; align-items: center; border-radius: 8px; transition: all 0.2s ease; box-shadow: 0 4px 6px -1px rgba(250, 204, 21, 0.4); cursor: pointer; text-decoration: none; }
-        .btn-cta:hover { background: #eab308; transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(250, 204, 21, 0.5); }
+        .modal { display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.7); z-index: 1000; justify-content: center; align-items: center; backdrop-filter: blur(8px); padding: 20px; }
+        .modal.active { display: flex; }
+        .btn-cta { background: #fbbf24; color: #1e293b; text-transform: uppercase; font-weight: 800; border-radius: 8px; transition: all 0.3s ease; border-bottom: 4px solid #d97706; }
+        .btn-cta:hover { transform: translateY(-2px); background: #f59e0b; }
+        .btn-cta:active { transform: translateY(0); border-bottom-width: 0; margin-top: 4px; }
+        /* Smooth loading for images */
+        img { opacity: 0; transition: opacity 0.5s ease-in; }
+        img.loaded { opacity: 1; }
     </style>
 </head>
 
 <body class="bg-white text-brand-text">
 
-    <!-- 1. ALERT BAR & NAVBAR -->
-    <div class="bg-brand-primary text-white py-2 text-center text-xs md:text-sm font-bold uppercase tracking-wider">
-        <div class="max-w-6xl mx-auto px-4 flex justify-center items-center gap-3 flex-wrap">
-            <span><i class="fa-solid fa-truck-fast"></i> LIVRARE DISPONIBILĂ</span>
-            <span>|</span>
-            <span><i class="fa-solid fa-hand-holding-dollar"></i> PLATĂ LA LIVRARE</span>
-            <span>|</span>
-            <span><i class="fa-solid fa-leaf"></i> INGREDIENTE NATURALE</span>
+    <!-- 1. COMPLIANCE TOP BAR -->
+    <div class="bg-brand-dark text-white py-2 text-[10px] md:text-xs text-center border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-4">
+            ESTE UN SUPLIMENT ALIMENTAR. CITIȚI CU ATENȚIE INFORMAȚIILE DE PE AMBALAJ.
         </div>
     </div>
 
-    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <div class="font-black text-2xl tracking-tight text-brand-dark">VISOVO</div>
-            <div class="hidden md:flex gap-6">
-                <a href="#benefits" class="text-sm font-semibold text-brand-muted hover:text-brand-primary transition">Beneficii</a>
-                <a href="#reviews" class="text-sm font-semibold text-brand-muted hover:text-brand-primary transition">Experiențe</a>
-                <a href="#faq" class="text-sm font-semibold text-brand-muted hover:text-brand-primary transition">Întrebări</a>
+    <!-- 2. NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-brand-primary rounded-full flex items-center justify-center text-white">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <span class="font-black text-xl md:text-2xl tracking-tighter text-brand-dark">VISOVO<span class="text-brand-primary">PRO</span></span>
             </div>
-            <a href="https://tl-track.com/tracker/vXs9/?sub_id={gclid}" class="btn-cta px-4 py-2 text-xs md:text-sm">
-                DETALII PRODUS <i class="fa-solid fa-arrow-right ml-2"></i>
+            
+            <div class="hidden lg:flex gap-8 items-center">
+                <a href="#benefits" class="text-sm font-bold text-brand-muted hover:text-brand-primary transition">BENEFICII</a>
+                <a href="#formula" class="text-sm font-bold text-brand-muted hover:text-brand-primary transition">FORMULĂ</a>
+                <a href="#reviews" class="text-sm font-bold text-brand-muted hover:text-brand-primary transition">RECENZII</a>
+                <a href="https://tl-track.com/tracker/vXs9/?sub_id={gclid}" class="btn-cta px-6 py-2.5 text-xs">
+                    VEZI OFERTA <i class="fa-solid fa-chevron-right ml-1"></i>
+                </a>
+            </div>
+            
+            <a href="https://tl-track.com/tracker/vXs9/?sub_id={gclid}" class="lg:hidden btn-cta px-4 py-2 text-[10px]">
+                COMANDAȚI ACUM
             </a>
         </div>
     </nav>
 
-    <!-- 1. HERO SECTION -->
-    <section class="relative py-12 md:py-24 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] shadow-inner">
-        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiLz48L3N2Zz4=')] opacity-50"></div>
-        <div class="max-w-6xl mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
-            <div class="flex-1 text-center lg:text-left max-w-2xl relative z-20 flex flex-col">
-                <div class="order-1">
-                    <span class="inline-block bg-brand-primary text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-6">SUPORT PENTRU SĂNĂTATEA OCHILOR</span>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight uppercase mb-8 break-words">
-                        MENȚINEȚI <span class="text-brand-yellow">CLARITATEA VIZUALĂ</span> ȘI CONFORTUL OCHILOR
-                    </h1>
+    <!-- 3. HERO SECTION -->
+    <section class="relative pt-10 pb-20 md:py-24 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-brand-light -z-10 skew-y-1 origin-top-left"></div>
+        <div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+            <div class="flex-1 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-white px-3 py-1.5 rounded-full border border-gray-200 mb-6 shadow-sm">
+                    <span class="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
+                    <span class="text-[10px] md:text-xs font-bold text-brand-muted uppercase tracking-widest">Suport Nutrițional Avansat</span>
                 </div>
-                <div class="order-2 lg:hidden w-full max-w-[150px] md:max-w-[200px] mx-auto mb-6">
-                    <img src="images/hero.webp" alt="Visovo Product" class="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]" onerror="this.style.display='none'">
+                <h1 class="text-4xl md:text-6xl font-black text-brand-dark leading-[1.1] mb-6">
+                    Susțineți <span class="text-brand-primary">Sănătatea Ochilor</span> în Era Digitală
+                </h1>
+                <p class="text-lg md:text-xl text-brand-muted mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    O formulă pe bază de extracte naturale creată pentru a completa dieta persoanelor care petrec mult timp în fața ecranelor.
+                </p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 text-left max-w-lg mx-auto lg:mx-0">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-green-500 text-xl"></i>
+                        <span class="font-semibold text-sm">Ajută la relaxarea oculară</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-green-500 text-xl"></i>
+                        <span class="font-semibold text-sm">Nutrienți pentru retină</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-green-500 text-xl"></i>
+                        <span class="font-semibold text-sm">Ingrediente 100% vegetale</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-green-500 text-xl"></i>
+                        <span class="font-semibold text-sm">Fără efecte secundare</span>
+                    </div>
                 </div>
-                <div class="order-3">
-                    <ul class="text-gray-200 space-y-4 mb-10 text-base md:text-lg font-medium max-w-lg mx-auto lg:mx-0 text-left">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-yellow mt-1.5"></i> <span>Ajută la diminuarea <strong>oboselii oculare</strong> cauzate de ecrane.</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-yellow mt-1.5"></i> <span>Susține nutriția necesară pentru <strong>funcționarea optimă</strong> a vederii.</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-yellow mt-1.5"></i> <span>Formulă naturală ce oferă <strong>protecție antioxidantă</strong> ochilor.</span></li>
-                    </ul>
-                    <a href="https://tl-track.com/tracker/vXs9/?sub_id={gclid}" class="btn-cta px-10 py-5 text-base md:text-xl w-full md:w-auto shadow-2xl inline-flex justify-center items-center">
-                        COMANDĂ ACUM CU PLATĂ LA LIVRARE <i class="fa-solid fa-cart-shopping ml-2 mt-1"></i>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="https://tl-track.com/tracker/vXs9/?sub_id={gclid}" class="btn-cta px-10 py-5 text-lg inline-flex items-center justify-center">
+                        SOLICITĂ OFERTA <i class="fa-solid fa-cart-shopping ml-3"></i>
                     </a>
+                    <div class="flex flex-col items-center sm:items-start justify-center">
+                        <div class="flex text-brand-yellow text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-xs font-bold text-brand-muted">4.9/5 din peste 2,500 recenzii</span>
+                    </div>
                 </div>
             </div>
-            <div class="hidden lg:block order-last flex-shrink-0 w-full max-w-[280px] xl:max-w-[320px] relative z-10 mx-auto lg:mx-0">
-                <img src="images/hero.webp" alt="Visovo Product" class="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]" onerror="this.style.display='none'">
+
+            <div class="flex-1 relative">
+                <div class="absolute inset-0 bg-brand-primary/5 rounded-full blur-3xl"></div>
+                <img src="images/hero.webp" alt="Visovo Pro Ambalaj" class="relative z-10 w-full max-w-md mx-auto drop-shadow-2xl" onload="this.classList.add('loaded')" onerror="this.src='https://placehold.co/400x600?text=Visovo+PRO';this.classList.add('loaded')">
             </div>
         </div>
     </section>
 
-    <!-- 2. TRUST STRIP -->
-    <div class="bg-white border-b border-gray-200">
-        <div class="max-w-6xl mx-auto px-4 py-5 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <div><i class="fa-solid fa-check-double text-2xl text-brand-primary mb-2"></i><h4 class="font-bold text-sm text-brand-dark">Calitate Garantată</h4><p class="text-xs text-brand-muted">Ingrediente verificate</p></div>
-            <div><i class="fa-solid fa-leaf text-2xl text-brand-primary mb-2"></i><h4 class="font-bold text-sm text-brand-dark">Suport Natural</h4><p class="text-xs text-brand-muted">Fără aditivi nocivi</p></div>
-            <div><i class="fa-solid fa-truck text-2xl text-brand-primary mb-2"></i><h4 class="font-bold text-sm text-brand-dark">ZERO Risc</h4><p class="text-xs text-brand-muted">Plată strict la livrare</p></div>
-            <div><i class="fa-solid fa-eye text-2xl text-brand-primary mb-2"></i><h4 class="font-bold text-sm text-brand-dark">Protecție Zilnică</h4><p class="text-xs text-brand-muted">Susține claritatea</p></div>
+    <!-- 4. TRUST STRIP -->
+    <div class="bg-white py-10 border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center text-center">
+                    <i class="fa-solid fa-shield-halved text-3xl text-brand-primary mb-3"></i>
+                    <span class="font-bold text-sm uppercase">Calitate UE</span>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <i class="fa-solid fa-leaf text-3xl text-brand-primary mb-3"></i>
+                    <span class="font-bold text-sm uppercase">100% Natural</span>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <i class="fa-solid fa-truck-fast text-3xl text-brand-primary mb-3"></i>
+                    <span class="font-bold text-sm uppercase">Livrare Rapidă</span>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <i class="fa-solid fa-hand-holding-dollar text-3xl text-brand-primary mb-3"></i>
+                    <span class="font-bold text-sm uppercase">Plată la livrare</span>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- 3. SOCIAL PROOF STRIP -->
-    <section class="bg-brand-light py-10 border-b border-gray-200">
-        <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div><p class="text-4xl font-black text-brand-primary">Milioane</p><p class="text-sm font-semibold text-brand-muted mt-1 uppercase">Oameni caută soluții pentru confort vizual</p></div>
-            <div><p class="text-4xl font-black text-brand-primary">35,000+</p><p class="text-sm font-semibold text-brand-muted mt-1 uppercase">Utilizatori mulțumiți de rezultate</p></div>
-            <div><p class="text-4xl font-black text-brand-primary">100%</p><p class="text-sm font-semibold text-brand-muted mt-1 uppercase">Ingrediente bazate pe plante</p></div>
-            <div><p class="text-4xl font-black text-brand-primary">Top</p><p class="text-sm font-semibold text-brand-muted mt-1 uppercase">Alegere pentru îngrijirea ochilor</p></div>
-        </div>
-    </section>
-
-    <!-- 4. BENEFITS & HOW IT WORKS -->
-    <section class="py-20 bg-white" id="benefits">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-5xl font-black text-brand-dark mb-6 uppercase tracking-tight">Investiți în <span class="text-brand-primary border-b-4 border-brand-primary">confortul ochilor</span> dumneavoastră</h2>
-            <p class="text-lg text-gray-700 leading-relaxed mb-8 font-medium">Orele petrecute în fața ecranelor digitale solicită intens mușchii oculari. Visovo oferă nutrienții necesari pentru a susține regenerarea naturală și a menține acuitatea vizuală, protejând ochii de stresul oxidativ și oboseala cronică.</p>
-        </div>
-        <div class="max-w-6xl mx-auto px-4 mt-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-brand-light p-8 rounded-2xl relative transition hover:-translate-y-2 hover:shadow-lg">
-                    <div class="w-14 h-14 bg-brand-primary text-white rounded-full flex items-center justify-center text-2xl mb-6 shadow-md"><i class="fa-solid fa-arrows-to-eye"></i></div>
-                    <h4 class="font-bold text-lg mb-3 uppercase text-brand-dark">Susține Focusul</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">Ajută mușchii oculari să se adapteze mai ușor la focalizarea pe distanțe diferite, îmbunătățind experiența cititului.</p>
-                </div>
-                <div class="bg-brand-light p-8 rounded-2xl relative transition hover:-translate-y-2 hover:shadow-lg">
-                    <div class="w-14 h-14 bg-brand-primary text-white rounded-full flex items-center justify-center text-2xl mb-6 shadow-md"><i class="fa-solid fa-droplet"></i></div>
-                    <h4 class="font-bold text-lg mb-3 uppercase text-brand-dark">Reduce Uscăciunea</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">Contribuie la menținerea hidratării naturale a ochilor, eliminând senzația de disconfort și iritare.</p>
-                </div>
-                <div class="bg-brand-light p-8 rounded-2xl relative transition hover:-translate-y-2 hover:shadow-lg">
-                    <div class="w-14 h-14 bg-brand-primary text-white rounded-full flex items-center justify-center text-2xl mb-6 shadow-md"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h4 class="font-bold text-lg mb-3 uppercase text-brand-dark">Protecție Antioxidantă</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">Oferă un scut împotriva radicalilor liberi, susținând sănătatea pe termen lung a retinei și cristalinului.</p>
-                </div>
-            </div>
-            <div class="text-center mt-12">
-                <a href="https://tl-track.com/tracker/vXs9/?sub_id={gclid}" class="btn-cta px-10 py-4 text-base shadow-xl">VEZI OFERTA ACTUALĂ <i class="fa-solid fa-arrow-right ml-2"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. REVIEWS -->
-    <section class="py-20 bg-brand-dark relative" id="reviews">
-        <div class="max-w-6xl mx-auto px-4 relative z-10">
-            <div class="text-center mb-16"><h2 class="text-3xl md:text-5xl font-black text-white uppercase mb-4">Experiențele Utilizatorilor</h2></div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                <div class="bg-gray-800 border border-gray-700 p-8 rounded-2xl">
-                    <div class="flex text-brand-yellow text-lg mb-4">★★★★★</div>
-                    <p class="text-gray-300 text-sm italic mb-6">"Lucrând ca analist, ochii îmi oboseau groaznic la birou. După o cură de Visovo, senzația de oboseală a dispărut și mă simt mult mai relaxat în fața monitorului."</p>
-                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-brand-primary flex items-center justify-center text-white font-bold text-lg">A</div><div><p class="font-bold text-white text-sm">Andrei Popescu</p><p class="text-xs text-gray-400">București</p></div></div>
-                </div>
-                <div class="bg-gray-800 border border-gray-700 p-8 rounded-2xl">
-                    <div class="flex text-brand-yellow text-lg mb-4">★★★★★</div>
-                    <p class="text-gray-300 text-sm italic mb-6">"După 40 de ani, ochii îmi oboseau repede la citit. Prietena mea mi-a recomandat Visovo și am rămas uimită de cât de mult ajută la menținerea clarității vizuale pe tot parcursul zilei."</p>
-                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-brand-primary flex items-center justify-center text-white font-bold text-lg">E</div><div><p class="font-bold text-white text-sm">Elena Ionescu</p><p class="text-xs text-gray-400">Cluj-Napoca</p></div></div>
-                </div>
-                <div class="bg-gray-800 border border-gray-700 p-8 rounded-2xl">
-                    <div class="flex text-brand-yellow text-lg mb-4">★★★★★</div>
-                    <p class="text-gray-300 text-sm italic mb-6">"Căutam un suport natural pentru vedere. De când folosesc acest produs, ochii mei nu se mai simt iritați și conduc mult mai relaxat pe timp de noapte."</p>
-                    <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-brand-primary flex items-center justify-center text-white font-bold text-lg">M</div><div><p class="font-bold text-white text-sm">Mihai Stan</p><p class="text-xs text-gray-400">Iași</p></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. FAQ -->
-    <section class="py-20 bg-brand-light" id="faq">
-        <div class="max-w-3xl mx-auto px-4">
-            <h2 class="text-3xl font-black text-brand-dark text-center mb-10 uppercase">Întrebări Frecvente</h2>
-            <div class="border border-gray-200 rounded-2xl bg-white overflow-hidden shadow-sm divide-y divide-gray-100">
-                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition"><h4 class="font-bold text-brand-dark">Cum funcționează Visovo pentru confortul vizual?</h4><span class="faq-icon text-2xl">+</span></div>
-                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed"><div class="py-4">Visovo oferă nutrienți esențiali care susțin nutriția mușchilor oculari și a retinei, ajutând la diminuarea oboselii provocate de ecranele digitale și factorii de mediu.</div></div>
-                </div>
-                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition"><h4 class="font-bold text-brand-dark">Este acest produs un tratament medical?</h4><span class="faq-icon text-2xl">+</span></div>
-                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed"><div class="py-4">Nu, Visovo este un supliment alimentar natural conceput pentru a completa dieta și a susține funcția vizuală normală. Nu înlocuiește consultul sau tratamentul prescris de medicul oftalmolog.</div></div>
-                </div>
-                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition"><h4 class="font-bold text-brand-dark">Lucrez mult la calculator. Este potrivit pentru mine?</h4><span class="faq-icon text-2xl">+</span></div>
-                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed"><div class="py-4">Absolut! Formula este ideală pentru persoanele care resimt disconfort, roșeață sau oboseală oculară după orele de lucru intens în fața dispozitivelor digitale.</div></div>
-                </div>
-                <div class="faq-item cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition"><h4 class="font-bold text-brand-dark">Cum pot comanda produsul original în România?</h4><span class="faq-icon text-2xl">+</span></div>
-                    <div class="faq-body bg-gray-50 px-6 text-sm text-gray-600 leading-relaxed"><div class="py-4">Puteți plasa o comandă sigură direct pe acest site oficial. Beneficiați de plată la livrare, asigurându-vă că primiți produsul autentic fără niciun risc financiar prealabil.</div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEO TEXT BLOCK -->
-    <section class="py-16 bg-white border-t border-gray-100 text-sm text-gray-700 leading-relaxed">
-        <div class="max-w-5xl mx-auto px-4 space-y-10">
-            <div>
-                <h3 class="text-xl font-bold text-brand-dark mb-3">Visovo în România: Suport Natural pentru Menținerea Sănătății Oculare</h3>
-                <p>Milioane de români se confruntă zilnic cu provocări vizuale cauzate de expunerea prelungită la ecrane digitale. Simptome precum oboseala oculară și senzația de ochi uscat au devenit frecvente. <strong>Visovo</strong> a fost creat pentru a oferi o <strong>soluție naturală</strong> care completează dieta zilnică cu nutrienți esențiali pentru sănătatea retinei și a mușchilor oculari.</p>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold text-brand-dark mb-3">De Ce Nutriția este Esențială pentru Ochii Dumneavoastră?</h3>
-                <p>Ochii au nevoie de vitamine și antioxidanți specifici pentru a funcționa corect și pentru a face față stresului oxidativ. Suplimentarea corectă poate ajuta la menținerea clarității vizuale și a confortului, oferind ochilor resursele necesare pentru a se regenera după efortul susținut de peste zi.</p>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold text-brand-dark mb-3">Importanța Îngrijirii Preventive a Vederii</h3>
-                <p>Îngrijirea preventivă este cea mai bună metodă de a menține calitatea vieții. Prin susținerea funcției oculare cu ingrediente naturale, puteți reduce disconfortul și puteți contribui la protejarea ochilor împotriva factorilor de mediu dăunători, asigurânduvă o vedere confortabilă pe termen lung.</p>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold text-brand-dark mb-3">Visovo: Păreri, Disponibilitate și Comandă Sigură</h3>
-                <p>Utilizatorii din România apreciază <strong>Visovo</strong> pentru ușurința de utilizare și compoziția sa bazată pe extracte vegetale. Pentru a asigura cel mai bun preț și originalitatea produsului, distribuția se face exclusiv prin intermediul platformelor oficiale online. Astfel, beneficiați de <strong>siguranța plății la livrare</strong> și de suportul echipei noastre în procesul de achiziție.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-brand-dark text-gray-400 py-12">
+    <!-- 5. BENEFITS SECTION -->
+    <section id="benefits" class="py-20">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="flex flex-wrap justify-center gap-6 mb-8 text-sm font-medium">
-                <button onclick="openModal('contactModal')" class="hover:text-white transition">Contact</button>
-                <button onclick="openModal('termsModal')" class="hover:text-white transition">Termeni și Condiții</button>
-                <button onclick="openModal('privacyModal')" class="hover:text-white transition">Confidențialitate</button>
-                <button onclick="openModal('returnsModal')" class="hover:text-white transition">Returnări</button>
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-5xl font-black text-brand-dark mb-6">De ce să alegeți Visovo PRO?</h2>
+                <p class="text-brand-muted font-medium">Lumea modernă ne solicită ochii mai mult ca niciodată. O dietă echilibrată, susținută de nutrienții potriviți, este cheia confortului pe termen lung.</p>
             </div>
-            <div class="text-[10px] text-gray-500 text-center max-w-4xl mx-auto leading-relaxed space-y-4">
-                <p class="font-semibold text-gray-400 uppercase">NOTĂ IMPORTANTĂ (DISCLAIMER):</p>
-                <p>Acest produs este un supliment alimentar și nu înlocuiește o dietă variată și echilibrată sau un mod de viață sănătos. Rezultatele pot varia de la o persoană la alta. Informațiile prezentate nu au scopul de a diagnostica, trata sau vindeca nicio afecțiune medicală.</p>
-                <p>Publicitate: Acest spațiu informativ este gestionat de un <strong>distribuitor autorizat</strong> independent. Google și Google Ads sunt mărci comerciale ale Google Inc. Acest site nu este susținut sau aprobat de Google în niciun fel.</p>
-                <p>Achitați contravaloarea produselor doar la momentul livrării (ramburs), asigurând o experiență de cumpărare fără riscuri. Protejăm complet confidențialitatea datelor dumneavoastră conform normelor GDPR.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-brand-light p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl text-brand-primary shadow-sm mb-6">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Reduce disconfortul</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">Ajută la calmarea senzației de ochi obosiți după ore de expunere la lumina albastră a dispozitivelor digitale.</p>
+                </div>
+                <div class="bg-brand-light p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl text-brand-primary shadow-sm mb-6">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Susține nutriția</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">Oferă vitaminele și carotenoizii necesari pentru menținerea bunei funcționări a retinei și cristalinului.</p>
+                </div>
+                <div class="bg-brand-light p-10 rounded-3xl border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl text-brand-primary shadow-sm mb-6">
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Protecție zilnică</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">Contribuie la protejarea celulelor împotriva stresului oxidativ, principalul factor al îmbătrânirii oculare premature.</p>
+                </div>
             </div>
-            <div class="text-center text-xs border-t border-gray-800 mt-8 pt-6">&copy; 2026 Visovo Authorized Distribution. Toate drepturile rezervate.</div>
+        </div>
+    </section>
+
+    <!-- 6. FORMULA SECTION -->
+    <section id="formula" class="py-20 bg-brand-dark text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="flex-1">
+                    <h2 class="text-3xl md:text-5xl font-black mb-8">O formulă bazată pe <span class="text-brand-yellow">Știință și Natură</span></h2>
+                    <p class="text-gray-400 mb-10 leading-relaxed">Nu facem compromisuri. Fiecare capsulă de Visovo PRO conține extracte standardizate pentru a asigura o biodisponibilitate maximă a nutrienților.</p>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-brand-yellow/20 rounded-lg flex items-center justify-center text-brand-yellow">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Extract de Afine</h4>
+                                <p class="text-sm text-gray-400">Recunoscut pentru proprietățile antioxidante și susținerea microcirculației oculare.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-brand-yellow/20 rounded-lg flex items-center justify-center text-brand-yellow">
+                                <i class="fa-solid fa-sun"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Luteină și Zeaxantină</h4>
+                                <p class="text-sm text-gray-400">Pigmenți esențiali care funcționează ca un filtru natural împotriva razelor UV.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-brand-yellow/20 rounded-lg flex items-center justify-center text-brand-yellow">
+                                <i class="fa-solid fa-vial"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Complex de Vitamine</h4>
+                                <p class="text-sm text-gray-400">Vitamina A, E și Zinc pentru menținerea vederii normale în orice condiții de lumină.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1 bg-white/5 p-4 rounded-[40px] border border-white/10">
+                    <div class="bg-white rounded-[32px] p-8 md:p-12 text-brand-dark">
+                        <h3 class="text-2xl font-black mb-6 text-center">Verificați Disponibilitatea</h3>
+                        <p class="text-sm text-brand-muted text-center mb-8">Comandați astăzi și beneficiați de prețul special direct de la distribuitor.</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center py-3 border-b border-gray-100">
+                                <span class="font-bold text-sm uppercase">Preț promoțional:</span>
+                                <span class="text-brand-primary font-black text-2xl">OFERTĂ LIMITATĂ</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-gray-100">
+                                <span class="font-bold text-sm uppercase">Livrare în România:</span>
+                                <span class="text-green-600 font-bold text-sm italic">În Stoc</span>
+                            </div>
+                        </div>
+
+                        <a href="https://tl-track.com/tracker/vXs9/?sub_id={gclid}" class="btn-cta w-full py-5 mt-10 text-center block">
+                            VEZI PREȚUL ACTUAL
+                        </a>
+                        <p class="text-[10px] text-brand-muted text-center mt-4">Plata se face numerar la curier după verificarea coletului.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. REVIEWS (COMPLIANT) -->
+    <section id="reviews" class="py-20 bg-brand-light">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black text-brand-dark mb-4 uppercase">Ce spun clienții noștri</h2>
+                <p class="text-xs text-brand-muted font-bold italic uppercase tracking-widest leading-loose">* Notă: Rezultatele pot varia de la o persoană la alta, în funcție de stilul de viață și organism.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex text-brand-yellow mb-4 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-brand-text text-sm italic mb-6">"Petrec peste 10 ore pe zi la calculator. Ochii nu se mai simt atât de obosiți seara, iar iritația a scăzut considerabil."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center text-brand-primary font-bold">M</div>
+                        <div><p class="font-bold text-sm">Marius Ionescu</p><p class="text-xs text-brand-muted">IT Manager, București</p></div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex text-brand-yellow mb-4 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-brand-text text-sm italic mb-6">"Am încercat multe suplimente, dar acesta mi se pare cel mai echilibrat ca formulă. Livrare a fost promptă, a doua zi."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center text-brand-primary font-bold">E</div>
+                        <div><p class="font-bold text-sm">Elena Stoica</p><p class="text-xs text-brand-muted">Profesor, Cluj</p></div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex text-brand-yellow mb-4 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-brand-text text-sm italic mb-6">"Plata la livrare mi-a oferit încrederea de care aveam nevoie. Produsul este sigilat și corespunde descrierii."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center text-brand-primary font-bold">R</div>
+                        <div><p class="font-bold text-sm">Radu Popa</p><p class="text-xs text-brand-muted">Pensionar, Iași</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FAQ -->
+    <section id="faq" class="py-20">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-black text-center mb-12">Întrebări Frecvente</h2>
+            <div class="space-y-4">
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center p-5 cursor-pointer hover:bg-gray-50 transition">
+                        <h4 class="font-bold text-brand-dark pr-4 text-sm md:text-base">Cum se administrează Visovo PRO?</h4>
+                        <span class="faq-icon transition-transform duration-300 text-brand-primary"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-body bg-gray-50/50 px-5 text-sm leading-relaxed text-brand-muted"><div class="pb-5">Se recomandă administrarea conform instrucțiunilor de pe ambalaj (de regulă 1-2 capsule pe zi), în timpul meselor principale, cu un pahar mare de apă.</div></div>
+                </div>
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center p-5 cursor-pointer hover:bg-gray-50 transition">
+                        <h4 class="font-bold text-brand-dark pr-4 text-sm md:text-base">În cât timp apar primele rezultate?</h4>
+                        <span class="faq-icon transition-transform duration-300 text-brand-primary"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-body bg-gray-50/50 px-5 text-sm leading-relaxed text-brand-muted"><div class="pb-5">Fiecare organism reacționează diferit. Majoritatea utilizatorilor observă o îmbunătățire a confortului ocular după primele 2-3 săptămâni de utilizare constantă.</div></div>
+                </div>
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" onclick="toggleFaq(this)">
+                    <div class="flex justify-between items-center p-5 cursor-pointer hover:bg-gray-50 transition">
+                        <h4 class="font-bold text-brand-dark pr-4 text-sm md:text-base">Există contraindicații?</h4>
+                        <span class="faq-icon transition-transform duration-300 text-brand-primary"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-body bg-gray-50/50 px-5 text-sm leading-relaxed text-brand-muted"><div class="pb-5">Fiind un produs natural, este bine tolerat. Cu toate acestea, persoanele însărcinate, cele care alăptează sau cele cu afecțiuni medicale cronice ar trebui să consulte un specialist înainte de utilizare.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER & COMPLIANCE -->
+    <footer class="bg-brand-light py-16 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center text-white text-[10px]">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <span class="font-black text-lg tracking-tighter text-brand-dark uppercase">Visovo PRO</span>
+                    </div>
+                    <p class="text-xs text-brand-muted leading-relaxed max-w-md">
+                        Misiunea noastră este de a oferi soluții de suport nutrițional de înaltă calitate pentru sănătatea oculară a populației din România. Lucrăm exclusiv cu ingrediente verificate și procese de producție certificate.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="font-bold text-sm mb-4 uppercase tracking-widest">Informații Utile</h5>
+                    <ul class="space-y-2 text-xs text-brand-muted">
+                        <li><button onclick="openModal('termsModal')" class="hover:text-brand-primary transition">Termeni și Condiții</button></li>
+                        <li><button onclick="openModal('privacyModal')" class="hover:text-brand-primary transition">Politică de Confidențialitate</button></li>
+                        <li><button onclick="openModal('returnsModal')" class="hover:text-brand-primary transition">Politica de Retur</button></li>
+                        <li><button onclick="openModal('contactModal')" class="hover:text-brand-primary transition">Contact și Suport</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-sm mb-4 uppercase tracking-widest">Siguranță</h5>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="bg-white border border-gray-200 p-2 rounded grayscale opacity-50"><i class="fa-brands fa-cc-visa text-xl"></i></div>
+                        <div class="bg-white border border-gray-200 p-2 rounded grayscale opacity-50"><i class="fa-brands fa-cc-mastercard text-xl"></i></div>
+                        <div class="bg-white border border-gray-200 p-2 rounded grayscale opacity-50"><i class="fa-solid fa-shield-check text-xl"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MANDATORY MEDICAL DISCLAIMER -->
+            <div class="bg-white border border-gray-200 p-6 md:p-10 rounded-3xl text-center">
+                <h6 class="font-black text-brand-dark mb-4 text-xs md:text-sm uppercase tracking-widest">Notă Importantă (Disclaimer Medical)</h6>
+                <div class="text-[10px] md:text-xs text-brand-muted space-y-4 max-w-4xl mx-auto leading-loose text-justify md:text-center">
+                    <p><strong>Visovo PRO este un supliment alimentar.</strong> Acesta nu este un medicament și nu a fost conceput pentru a diagnostica, trata, vindeca sau preveni nicio boală. Suplimentele alimentare nu înlocuiesc o dietă variată și echilibrată și un mod de viață sănătos.</p>
+                    <p>Rezultatele individuale pot varia considerabil în funcție de factori precum vârsta, starea generală de sănătate, predispoziția genetică și regularitatea administrării. Nu depășiți doza recomandată pentru consumul zilnic.</p>
+                    <p>Informațiile prezentate pe acest site au scop pur informativ și nu substituie sfatul medicului oftalmolog sau al oricărui alt specialist în domeniul sănătății. Înainte de a începe orice regim de suplimentare, consultați un medic.</p>
+                    <p>Publicitate: Acest site este operat de un distribuitor autorizat independent. Toate mărcile înregistrate aparțin deținătorilor lor de drept. Google Ads este un serviciu oferit de Google LLC, iar acest site nu este afiliat, susținut sau partener al Google LLC.</p>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-[10px] font-bold text-brand-muted uppercase tracking-tighter">&copy; 2026 VISOVO AUTHORIZED DISTRIBUTION RO. Toate drepturile rezervate.</p>
+                    <div class="text-[9px] text-brand-muted">Cod identificare fiscală: RO-DIST-VSO-2026 | Sediul: București, Sector 1, România</div>
+                </div>
+            </div>
         </div>
     </footer>
 
     <!-- MOBILE STICKY CTA -->
-    <div class="fixed bottom-0 left-0 w-full bg-white p-3 border-t border-gray-200 shadow-lg z-50 flex md:hidden">
-        <a href="https://tl-track.com/tracker/vXs9/?sub_id={gclid}" class="btn-cta w-full py-3 text-sm">COMANDĂ ACUM CU PLATĂ LA LIVRARE</a>
+    <div class="fixed bottom-0 left-0 w-full bg-white p-3 border-t border-gray-200 shadow-[0_-10px_30px_rgba(0,0,0,0.1)] z-50 flex md:hidden">
+        <a href="https://tl-track.com/tracker/vXs9/?sub_id={gclid}" class="btn-cta w-full py-4 text-sm flex items-center justify-center gap-3">
+            VERIFICĂ DISPONIBILITATEA <i class="fa-solid fa-arrow-right animate-bounce-x"></i>
+        </a>
     </div>
 
-    <!-- MODALS (LEGAL) -->
-    <div id="contactModal" class="modal"><div class="bg-white rounded-xl w-full max-w-lg shadow-2xl overflow-hidden m-4"><div class="p-5 border-b border-gray-100 flex justify-between items-center"><h3 class="font-bold text-xl text-brand-dark">Contact</h3><button onclick="closeModals()" class="text-gray-400 hover:text-black text-xl"><i class="fa-solid fa-xmark"></i></button></div><div class="p-6 text-sm text-gray-600 leading-relaxed"><p>Pentru suport legat de comenzi, facturare sau expediere în România, vă rugăm să utilizați datele de contact furnizate pe factura care însoțește pachetul livrat prin curier de către distribuitorul autorizat.</p></div></div></div>
-    <div id="termsModal" class="modal"><div class="bg-white rounded-xl w-full max-w-lg shadow-2xl overflow-hidden m-4"><div class="p-5 border-b border-gray-100 flex justify-between items-center"><h3 class="font-bold text-xl text-brand-dark">Termeni și Condiții</h3><button onclick="closeModals()" class="text-gray-400 hover:text-black text-xl"><i class="fa-solid fa-xmark"></i></button></div><div class="p-6 text-sm text-gray-600 leading-relaxed max-h-[60vh] overflow-y-auto"><p>Această pagină este gestionată de un distribuitor autorizat care facilitează procesul de comandă către unitatea logistică centrală.</p></div></div></div>
-    <div id="privacyModal" class="modal"><div class="bg-white rounded-xl w-full max-w-lg shadow-2xl overflow-hidden m-4"><div class="p-5 border-b border-gray-100 flex justify-between items-center"><h3 class="font-bold text-xl text-brand-dark">Confidențialitate</h3><button onclick="closeModals()" class="text-gray-400 hover:text-black text-xl"><i class="fa-solid fa-xmark"></i></button></div><div class="p-6 text-sm text-gray-600 leading-relaxed max-h-[60vh] overflow-y-auto"><p>Datele dumneavoastră sunt procesate în siguranță de către distribuitorul autorizat exclusiv pentru livrare. Nu colectăm date bancare.</p></div></div></div>
-    <div id="returnsModal" class="modal"><div class="bg-white rounded-xl w-full max-w-lg shadow-2xl overflow-hidden m-4"><div class="p-5 border-b border-gray-100 flex justify-between items-center"><h3 class="font-bold text-xl text-brand-dark">Politica de Retur</h3><button onclick="closeModals()" class="text-gray-400 hover:text-black text-xl"><i class="fa-solid fa-xmark"></i></button></div><div class="p-6 text-sm text-gray-600 leading-relaxed max-h-[60vh] overflow-y-auto"><p>Procedura de retur este gestionată conform legislației românești. Adresa de retur este furnizată în coletul primit de la distribuitor.</p></div></div></div>
+    <!-- MODALS -->
+    <div id="contactModal" class="modal" onclick="closeModals(event)">
+        <div class="bg-white rounded-3xl w-full max-w-lg shadow-2xl overflow-hidden p-8 relative">
+            <button onclick="closeModals()" class="absolute top-5 right-5 text-gray-400 hover:text-brand-dark"><i class="fa-solid fa-xmark text-xl"></i></button>
+            <h3 class="font-black text-2xl mb-4">Contact Suport</h3>
+            <p class="text-sm text-brand-muted mb-6">Pentru întrebări despre comenzi sau livrări în România, vă stăm la dispoziție:</p>
+            <div class="space-y-4 text-sm font-bold">
+                <div class="flex items-center gap-3 p-4 bg-brand-light rounded-xl"><i class="fa-solid fa-envelope text-brand-primary"></i> contact@visovo-romania.store</div>
+                <div class="flex items-center gap-3 p-4 bg-brand-light rounded-xl"><i class="fa-solid fa-clock text-brand-primary"></i> Luni - Vineri: 09:00 - 18:00</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Generic Modal for Legal Content -->
+    <div id="genericModal" class="modal" onclick="closeModals(event)">
+        <div class="bg-white rounded-3xl w-full max-w-2xl shadow-2xl overflow-hidden p-8 relative max-h-[80vh] flex flex-col">
+            <button onclick="closeModals()" class="absolute top-5 right-5 text-gray-400 hover:text-brand-dark"><i class="fa-solid fa-xmark text-xl"></i></button>
+            <h3 id="modalTitle" class="font-black text-2xl mb-6 uppercase tracking-tight"></h3>
+            <div id="modalContent" class="text-sm text-brand-muted leading-relaxed overflow-y-auto pr-4"></div>
+        </div>
+    </div>
 
     <script>
         function toggleFaq(element) {
@@ -290,18 +420,38 @@
                 element.classList.add('open');
             }
         }
-        function openModal(id) {
-            document.getElementById(id).classList.add('active');
+
+        function openModal(type) {
+            const genericModal = document.getElementById('genericModal');
+            const title = document.getElementById('modalTitle');
+            const content = document.getElementById('modalContent');
+            
+            if(type === 'contactModal') {
+                document.getElementById('contactModal').classList.add('active');
+            } else {
+                title.innerText = type === 'termsModal' ? 'Termeni și Condiții' : 
+                                 type === 'privacyModal' ? 'Politica de Confidențialitate' : 'Politica de Retur';
+                
+                content.innerHTML = `<p class="mb-4">Acest site este operat de un Distribuitor Autorizat independent. Prin plasarea unei comenzi, sunteți de acord cu termenii noștri de procesare a datelor.</p>
+                                     <p class="mb-4"><strong>Datele Personale:</strong> Colectăm numele, prenumele, adresa de livrare și numărul de telefon exclusiv pentru procesarea și livrarea comenzii dumneavoastră prin servicii de curierat partener.</p>
+                                     <p class="mb-4"><strong>Retururi:</strong> Aveți dreptul de a returna produsul în termen de 14 zile de la primire, conform legislației românești, cu condiția ca acesta să fie în ambalajul original și sigilat (din motive de protecție a sănătății).</p>
+                                     <p>Pentru orice solicitare, vă rugăm să utilizați secțiunea de Contact.</p>`;
+                genericModal.classList.add('active');
+            }
             document.body.style.overflow = 'hidden';
         }
-        function closeModals() {
-            document.querySelectorAll('.modal').forEach(modal => modal.classList.remove('active'));
-            document.body.style.overflow = '';
+
+        function closeModals(e) {
+            if (e && e.target.classList.contains('modal') || !e) {
+                document.querySelectorAll('.modal').forEach(m => m.classList.remove('active'));
+                document.body.style.overflow = '';
+            }
         }
-        document.querySelectorAll('.modal').forEach(modal => {
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) closeModals();
-            });
+
+        // Handle image loading states for better UX
+        document.querySelectorAll('img').forEach(img => {
+            if (img.complete) img.classList.add('loaded');
+            img.addEventListener('load', () => img.classList.add('loaded'));
         });
     </script>
 </body>
